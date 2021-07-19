@@ -1,6 +1,6 @@
 # Exported from:        http://xl-release-nightly.xebialabs.com:5516/
-# Release version:      10.2.0-712.113
-# Date created:         Tue Jul 13 11:36:54 CEST 2021
+# Release version:      10.3.0-719.113
+# Date created:         Mon Jul 19 10:33:00 CEST 2021
 
 ---
 apiVersion: xl-release/v1
@@ -8,13 +8,13 @@ kind: Templates
 metadata:
   home: Samples & Tutorials
 spec:
-- name: Repository
+- name: My repo
   type: git.Repository
   url: https://github.com/BojanKocijan/daiRelease
   username: kocijan
-  password: !value "git_Repository_Repository_password"
+  password: !value "git_Repository_My_repo_password"
 - template: Configure Release
-  scheduledStartDate: 2021-07-12T09:00:00+02:00
+  scheduledStartDate: 2021-07-19T09:00:00+02:00
   phases:
   - phase: Setup mail server
     tasks:
@@ -318,7 +318,7 @@ spec:
     value: Deploy to Main
   riskProfile: Default risk profile
 - template: Guided Tour for Release Managers
-  scheduledStartDate: 2021-07-12T09:00:00+02:00
+  scheduledStartDate: 2021-07-19T09:00:00+02:00
   phases:
   - phase: Designing a release
     tasks:
@@ -512,7 +512,7 @@ spec:
   riskProfile: Default risk profile
 - template: Sample Release Template
   description: Major and minor release template using manual deployments.
-  scheduledStartDate: 2021-07-12T09:00:00+02:00
+  scheduledStartDate: 2021-07-19T09:00:00+02:00
   phases:
   - phase: QA
     tasks:
@@ -668,7 +668,7 @@ spec:
   riskProfile: Default risk profile
 - template: Sample Release Template with XL Deploy
   description: Major and minor release template.
-  scheduledStartDate: 2021-07-12T09:00:00+02:00
+  scheduledStartDate: 2021-07-19T09:00:00+02:00
   phases:
   - phase: QA
     tasks:
@@ -812,7 +812,7 @@ spec:
     key: packageId
   riskProfile: Default risk profile
 - template: Welcome to Release!
-  scheduledStartDate: 2021-07-12T09:00:00+02:00
+  scheduledStartDate: 2021-07-19T09:00:00+02:00
   phases:
   - phase: Introduction
     tasks:
