@@ -1,6 +1,6 @@
 # Exported from:        http://40b7dc713e83:5516/
 # Release version:      10.2.0
-# Date created:         Wed Aug 25 11:33:20 GMT 2021
+# Date created:         Wed Aug 25 11:35:53 GMT 2021
 
 ---
 apiVersion: xl-release/v1
@@ -253,7 +253,7 @@ spec:
       conditions:
       - name: Got email that 'Check email' task was started
         type: xlrelease.GateCondition
-    - name: new task
+    - name: Bojan
       type: xlrelease.Task
     color: '#009CDB'
   - phase: Setup Users & Security
