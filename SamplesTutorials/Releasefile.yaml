@@ -1,6 +1,6 @@
 # Exported from:        http://3770758f00b1:5516/
 # Release version:      10.2.0
-# Date created:         Tue Nov 09 13:40:09 GMT 2021
+# Date created:         Tue Nov 09 13:41:05 GMT 2021
 
 ---
 apiVersion: xl-release/v1
@@ -46,6 +46,8 @@ spec:
       conditions:
       - name: Got email that 'Check email' task was started
         type: xlrelease.GateCondition
+    - name: sdgweg
+      type: xlrelease.Task
     color: '#009CDB'
   - phase: Setup Users & Security
     tasks:
